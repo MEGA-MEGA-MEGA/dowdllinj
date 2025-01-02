@@ -76,6 +76,7 @@ bool InjectDLL(DWORD pid, const char* dllPath) {
 
 int main()
 {
+    setlocale(LC_ALL, "");
     std::string dllPath;
     std::cout << "Введите полный путь к DLL: ";
     std::getline(std::cin, dllPath);
